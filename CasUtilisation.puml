@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+
+actor Utilisateur
+rectangle "Système" {
+  usecase (Créer un compte)
+  usecase (Afficher un feed aléatoire)
+}
+
+Utilisateur --> (Créer un compte)
+Utilisateur --> (Afficher un feed aléatoire)
+
+@enduml

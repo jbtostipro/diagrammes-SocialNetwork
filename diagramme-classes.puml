@@ -1,0 +1,22 @@
+@startuml
+class Utilisateur {
+  Controleur Utilisateur
+}
+
+class Modele {
+  user ->Créer un compte 
+}
+
+class Vue {
+  feed
+}
+
+class Controleur {
+  feed
+}
+
+Utilisateur --> Controleur : Utilise
+Controleur --> Modele : Utilise
+Controleur --> Vue : Utilise
+Modele --> Vue : Informe
+@enduml

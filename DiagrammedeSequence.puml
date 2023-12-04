@@ -1,0 +1,9 @@
+@startuml
+participant Utilisateur
+participant Systeme
+
+Utilisateur -> Systeme: Demande affichage feed aléatoire
+activate Systeme
+Systeme -> Systeme: Récupération et affichage feed aléatoire
+deactivate Systeme
+@enduml
